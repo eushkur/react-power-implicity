@@ -1,0 +1,54 @@
+.wrapper {
+  max-width: 1170px;
+  padding: 0px 32px;
+}
+
+.logo {
+  justify-self: start;
+  margin-top: 32px;
+}
+
+.header {
+  &__content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__navigation {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+    max-width: 310px;
+    margin-top: 30px;
+    @media (max-width: 756px) {
+      gap: 48px;
+    }
+    @media (max-width: 465px) {
+      place-items: center;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 32px;
+    }
+    &-link {
+      font-family: "Poppins";
+      color: #ffffff;
+      font-size: 14px;
+    }
+  }
+
+  &__button {
+    justify-self: end;
+    margin-top: 32px;
+    padding: 15px 15px;
+    font-family: "Poppins";
+    color: #16181b;
+    font-size: 14px;    
+    border-radius: 999px;
+    cursor: pointer;
+    @media (max-width: 756px) {
+      font-size: 12px;
+    }
+  }
+}
